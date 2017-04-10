@@ -58,16 +58,17 @@ public class MainActivity extends AppCompatActivity {
     View.OnClickListener butOpHandler=new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            int num1, num2, result;
+            int num1, num2;
+            double result=0;
             num1=Integer.parseInt(text1.getText().toString());
-            num2=Integer.parseInt(text1.getText().toString());
+            num2=Integer.parseInt(text2.getText().toString());
             switch(v.getId()){
                 case R.id.op1 : result=num1+num2;break;
                 case R.id.op2 : result=num1-num2;break;
                 case R.id.op3 : result=num1*num2;break;
-                case R.id.op4 : result=num1/num2;break;
+                case R.id.op4 : result=(double)num1/num2;break;
             }
-            tv.setText(); // 으르흐윽흐그흐극규ㅠㅠㅠ
+            tv.setText(result+""); // 으르흐윽흐그흐극규ㅠㅠㅠ
         }
     }; // 익명 클래스는 ; 필요
 
