@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public boolean onTouch(View v, MotionEvent event) {
             numStr=""; // 에디트 텍스트가 선택되었을때 문자열이 누적되지 않도록 초기화
-            switch(v.getId()){ // 선택된 에디트텍스트가 무엇인지 판단
+             switch(v.getId()){ // 선택된 에디트텍스트가 무엇인지 판단
                 case R.id.text1:
                     selectEdit=SELECT_EDIT1; break;
                 case R.id.text2:
